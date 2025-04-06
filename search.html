@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelHub | Search</title>
+    <link rel="stylesheet" href="styles/search.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <img src="assets/images/logo.png" alt="Erfuun-Travel" class="logo">
+            <ul class="nav-links">
+                <li><a href="auth.html">Login/Signup</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="search-main">
+        <div class="search-container">
+            <aside class="search-filters">
+                <div class="filter-section">
+                    <h3>Search Type</h3>
+                    <div class="filter-options">
+                        <label class="filter-option active">
+                            <input type="radio" name="search-type" checked> Hotels
+                        </label>
+                        <label class="filter-option">
+                            <input type="radio" name="search-type"> Flights
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>Price Range</h3>
+                    <div class="price-range">
+                        <input type="range" min="0" max="1000" value="500" class="slider">
+                        <div class="price-values">
+                            <span>$0</span>
+                            <span>$1000</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>Star Rating</h3>
+                    <div class="rating-filter">
+                        <label class="star-option">
+                            <input type="checkbox"> ★★★★★
+                        </label>
+                        <label class="star-option">
+                            <input type="checkbox"> ★★★★☆
+                        </label>
+                        <label class="star-option">
+                            <input type="checkbox"> ★★★☆☆
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>Amenities</h3>
+                    <div class="amenities-filter">
+                        <label>
+                            <input type="checkbox"> Free WiFi
+                        </label>
+                        <label>
+                            <input type="checkbox"> Pool
+                        </label>
+                        <label>
+                            <input type="checkbox"> Gym
+                        </label>
+                        <label>
+                            <input type="checkbox"> Restaurant
+                        </label>
+                    </div>
+                </div>
+                
+                <button class="btn btn-primary apply-filters">Apply Filters</button>
+            </aside>
+            
+     
+            <section class="search-results">
+                <div class="results-header">
+                    <h2>Hotels in Mashhad</h2>
+                    <div class="sort-options">
+                        <label>Sort by:</label>
+                        <select>
+                            <option>Price (Low to High)</option>
+                            <option>Price (High to Low)</option>
+                            <option>Rating</option>
+                            <option>Distance</option>
+                        </select>
+                    </div>
+                </div>
+                
+      
+                <div class="result-card">
+                    <img src="assets/images/images4.jpeg" alt="Luxury Hotel" class="hotel-image">
+                    <div class="hotel-info">
+                        <h3 class="hotel-name">Ghasr Hotel</h3>
+                        <div class="hotel-location">
+                            <span class="location-icon">📍</span> Mashhad
+                        </div>
+                        <div class="hotel-rating">
+                            ★★★★☆ (4.2/5)
+                        </div>
+                        <div class="hotel-amenities">
+                            <span class="amenity">Free WiFi</span>
+                            <span class="amenity">Pool</span>
+                            <span class="amenity">Gym</span>
+                        </div>
+                    </div>
+                    <div class="hotel-pricing">
+                        <div class="price-per-night">$189/night</div>
+                      
+                        <button class="btn btn-primary">View Deal</button>
+                    </div>
+                </div>
+                
+                <div class="result-card">
+                    <img src="assets/images/images6.jpeg" alt="Boutique Hotel" class="hotel-image">
+                    <div class="hotel-info">
+                        <h3 class="hotel-name">Almas Hotel</h3>
+                        <div class="hotel-location">
+                            <span class="location-icon">📍</span>Mashhad
+                        </div>
+                        <div class="hotel-rating">
+                            ★★★★☆ (4.5/5)
+                        </div>
+                        <div class="hotel-amenities">
+                            <span class="amenity">Free WiFi</span>
+                            <span class="amenity">Restaurant</span>
+                        </div>
+                    </div>
+                    <div class="hotel-pricing">
+                        <div class="price-per-night">$145/night</div>
+                       
+                        <button class="btn btn-primary">View Deal</button>
+                    </div>
+                </div>
+                
+                <div class="result-card">
+                    <img src="assets/images/darvishi-royal-hotel.jpg" alt="Budget Hotel" class="hotel-image">
+                    <div class="hotel-info">
+                        <h3 class="hotel-name">Darvishi</h3>
+                        <div class="hotel-location">
+                            <span class="location-icon">📍</span>Mashhad
+                        </div>
+                        <div class="hotel-rating">
+                            ★★★☆☆ (3.8/5)
+                        </div>
+                        <div class="hotel-amenities">
+                            <span class="amenity">Free WiFi</span>
+                            <span class="amenity">Breakfast</span>
+                        </div>
+                    </div>
+                    <div class="hotel-pricing">
+                        <div class="price-per-night">$89/night</div>               
+                        <button class="btn btn-primary">View Deal</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Erfuun-Travel</h3>
+                <p>Your journey begins here</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="auth.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Erfuun-Travel. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+

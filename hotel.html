@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelHub | Hotel Booking</title>
+    <link rel="stylesheet" href="styles/hotel.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <img src="assets/images/logo.png" alt="TravelHub Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="auth.html">Login/Signup</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="hotel-main">
+        <div class="hotel-container">
+            <!-- Hotel Details -->
+            <section class="hotel-details">
+                <div class="hotel-header">
+                    <h1>Grand Plaza Hotel</h1>
+                    <div class="hotel-rating">
+                        ★★★★☆ (4.2/5) <span class="review-count">(1,245 reviews)</span>
+                    </div>
+                    <div class="hotel-location">
+                        <span class="location-icon">📍</span> 123 Central Park West, Manhattan, New York
+                    </div>
+                </div>
+                
+                <div class="hotel-gallery">
+                    <div class="main-image">
+                        <img src="assets/images/hotel1.jpg" alt="Grand Plaza Hotel">
+                    </div>
+                    <div class="thumbnail-grid">
+                        <img src="assets/images/hotel-room1.jpg" alt="Hotel Room">
+                        <img src="assets/images/hotel-pool.jpg" alt="Hotel Pool">
+                        <img src="assets/images/hotel-lobby.jpg" alt="Hotel Lobby">
+                        <img src="assets/images/hotel-restaurant.jpg" alt="Hotel Restaurant">
+                    </div>
+                </div>
+                
+                <div class="hotel-amenities">
+                    <h3>Amenities</h3>
+                    <div class="amenities-grid">
+                        <div class="amenity">
+                            <span class="amenity-icon">🏊</span> Swimming Pool
+                        </div>
+                        <div class="amenity">
+                            <span class="amenity-icon">🏋️</span> Fitness Center
+                        </div>
+                        <div class="amenity">
+                            <span class="amenity-icon">🍽️</span> Restaurant
+                        </div>
+                        <div class="amenity">
+                            <span class="amenity-icon">🚿</span> Spa
+                        </div>
+                        <div class="amenity">
+                            <span class="amenity-icon">📶</span> Free WiFi
+                        </div>
+                        <div class="amenity">
+                            <span class="amenity-icon">🚗</span> Parking
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hotel-description">
+                    <h3>Description</h3>
+                    <p>
+                        The Grand Plaza Hotel offers luxurious accommodations in the heart of Manhattan. 
+                        Our hotel features elegant rooms with stunning city views, world-class dining, 
+                        and exceptional service. Located just steps from Central Park and major attractions, 
+                        it's the perfect choice for both business and leisure travelers.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Booking Form -->
+            <section class="booking-form">
+                <div class="booking-card">
+                    <h2>Your Stay</h2>
+                    
+                    <div class="booking-dates">
+                        <div class="date-field">
+                            <label>Check-in</label>
+                            <div class="date-value">Nov 15, 2023</div>
+                        </div>
+                        <div class="date-field">
+                            <label>Check-out</label>
+                            <div class="date-value">Nov 18, 2023</div>
+                        </div>
+                    </div>
+                    
+                    <div class="room-selection">
+                        <h3>Select Room</h3>
+                        <div class="room-option">
+                            <div class="room-info">
+                                <h4>Deluxe King Room</h4>
+                                <p>1 King Bed • 35 m² • City View</p>
+                                <div class="room-amenities">
+                                    <span>Free WiFi</span>
+                                    <span>Air Conditioning</span>
+                                    <span>Breakfast Included</span>
+                                </div>
+                            </div>
+                            <div class="room-price">
+                                <div class="price-per-night">$189/night</div>
+                                <div class="total-price">$567 total</div>
+                                <button class="btn btn-primary">Select</button>
+                            </div>
+                        </div>
+                        
+                        <div class="room-option">
+                            <div class="room-info">
+                                <h4>Executive Suite</h4>
+                                <p>1 King Bed • 55 m² • Park View</p>
+                                <div class="room-amenities">
+                                    <span>Free WiFi</span>
+                                    <span>Air Conditioning</span>
+                                    <span>Breakfast Included</span>
+                                    <span>Lounge Access</span>
+                                </div>
+                            </div>
+                            <div class="room-price">
+                                <div class="price-per-night">$289/night</div>
+                                <div class="total-price">$867 total</div>
+                                <button class="btn btn-primary">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="guest-info">
+                        <h3>Guest Information</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="guest-name">Full Name</label>
+                                <input type="text" id="guest-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guest-email">Email</label>
+                                <input type="email" id="guest-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="guest-phone">Phone Number</label>
+                                <input type="tel" id="guest-phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="special-requests">Special Requests</label>
+                                <textarea id="special-requests" rows="3"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="payment-section">
+                        <h3>Payment</h3>
+                        <div class="payment-options">
+                            <label class="payment-option active">
+                                <input type="radio" name="payment" checked> Credit Card
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment"> PayPal
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment"> Pay at Hotel
+                            </label>
+                        </div>
+                        
+                        <div class="credit-card-form">
+                            <div class="form-group">
+                                <label for="card-number">Card Number</label>
+                                <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="expiry">Expiry Date</label>
+                                    <input type="text" id="expiry" placeholder="MM/YY" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" placeholder="123" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="card-name">Name on Card</label>
+                                <input type="text" id="card-name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="booking-summary">
+                            <div class="summary-item">
+                                <span>Room (3 nights)</span>
+                                <span>$567.00</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Taxes & Fees</span>
+                                <span>$85.05</span>
+                            </div>
+                            <div class="summary-total">
+                                <span>Total</span>
+                                <span>$652.05</span>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Complete Booking</button>
+                        <p class="cancellation-policy">
+                            Free cancellation until Nov 10, 2023. After that, cancellation fees may apply.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TravelHub</h3>
+                <p>Your journey begins here</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="auth.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 TravelHub. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

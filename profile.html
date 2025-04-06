@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelHub | Profile</title>
+    <link rel="stylesheet" href="styles/profile.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <img src="assets/images/logo.png" alt="TravelHub Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="auth.html">Login/Signup</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="profile-main">
+        <div class="profile-container">
+            <!-- User Info -->
+            <section class="user-info">
+                <div class="profile-header">
+                    <img src="assets/images/profile-pic.png" alt="Profile Picture" class="profile-pic">
+                    <div class="profile-details">
+                        <h1>John Doe</h1>
+                        <div class="member-since">Member since: January 2022</div>
+                        <div class="user-stats">
+                            <div class="stat">
+                                <div class="stat-number">12</div>
+                                <div class="stat-label">Trips</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">8</div>
+                                <div class="stat-label">Reviews</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">3</div>
+                                <div class="stat-label">Wishlists</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="personal-info">
+                    <h2>Personal Information</h2>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <label>Email:</label>
+                            <span>john.doe@example.com</span>
+                        </div>
+                        <div class="info-item">
+                            <label>Phone:</label>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="info-item">
+                            <label>Address:</label>
+                            <span>123 Main St, Apt 4B, New York, NY 10001</span>
+                        </div>
+                        <div class="info-item">
+                            <label>Date of Birth:</label>
+                            <span>January 15, 1985</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary">Edit Profile</button>
+                </div>
+            </section>
+            
+            <!-- Reservations -->
+            <section class="reservations">
+                <h2>Your Reservations</h2>
+                <div class="reservation-tabs">
+                    <button class="tab-btn active">Upcoming</button>
+                    <button class="tab-btn">Past</button>
+                    <button class="tab-btn">Cancelled</button>
+                </div>
+                
+                <div class="reservation-list">
+                    <div class="reservation-card">
+                        <div class="reservation-type hotel">Hotel</div>
+                        <div class="reservation-details">
+                            <h3>Grand Plaza Hotel</h3>
+                            <div class="reservation-date">Nov 15 - Nov 18, 2023</div>
+                            <div class="reservation-status confirmed">Confirmed</div>
+                        </div>
+                        <div class="reservation-price">
+                            <div class="price">$652.05</div>
+                            <button class="btn btn-primary">View Details</button>
+                        </div>
+                    </div>
+                    
+                    <div class="reservation-card">
+                        <div class="reservation-type flight">Flight</div>
+                        <div class="reservation-details">
+                            <h3>New York (JFK) to Miami (MIA)</h3>
+                            <div class="reservation-date">Nov 15, 2023</div>
+                            <div class="reservation-status confirmed">Confirmed</div>
+                        </div>
+                        <div class="reservation-price">
+                            <div class="price">$245.00</div>
+                            <button class="btn btn-primary">View Details</button>
+                        </div>
+                    </div>
+                    
+                    <div class="reservation-card">
+                        <div class="reservation-type hotel">Hotel</div>
+                        <div class="reservation-details">
+                            <h3>Beachside Resort</h3>
+                            <div class="reservation-date">Sep 5 - Sep 12, 2023</div>
+                            <div class="reservation-status completed">Completed</div>
+                        </div>
+                        <div class="reservation-price">
+                            <div class="price">$1,245.60</div>
+                            <button class="btn btn-primary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Transactions -->
+            <section class="transactions">
+                <h2>Transaction History</h2>
+                <div class="transaction-list">
+                    <div class="transaction-card">
+                        <div class="transaction-date">Nov 2, 2023</div>
+                        <div class="transaction-details">
+                            <div class="transaction-description">Grand Plaza Hotel Booking</div>
+                            <div class="transaction-method">Credit Card (•••• 4567)</div>
+                        </div>
+                        <div class="transaction-amount">
+                            <div class="amount">-$652.05</div>
+                            <div class="status paid">Paid</div>
+                        </div>
+                    </div>
+                    
+                    <div class="transaction-card">
+                        <div class="transaction-date">Nov 1, 2023</div>
+                        <div class="transaction-details">
+                            <div class="transaction-description">Flight to Miami</div>
+                            <div class="transaction-method">PayPal</div>
+                        </div>
+                        <div class="transaction-amount">
+                            <div class="amount">-$245.00</div>
+                            <div class="status paid">Paid</div>
+                        </div>
+                    </div>
+                    
+                    <div class="transaction-card">
+                        <div class="transaction-date">Aug 15, 2023</div>
+                        <div class="transaction-details">
+                            <div class="transaction-description">Beachside Resort Deposit</div>
+                            <div class="transaction-method">Credit Card (•••• 4567)</div>
+                        </div>
+                        <div class="transaction-amount">
+                            <div class="amount">-$500.00</div>
+                            <div class="status refunded">Refunded</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TravelHub</h3>
+                <p>Your journey begins here</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="auth.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 TravelHub. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
