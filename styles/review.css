@@ -1,4 +1,4 @@
-/* Review Page Styles */
+
 :root {
     --primary-color: #6c5ce7;
     --secondary-color: #a29bfe;
@@ -18,11 +18,11 @@
 }
 
 body {
-    background-color: var(--dark-color);
+    background-color: #1e272e;
     color: var(--text-color);
 }
 
-/* Header Styles */
+
 .main-header {
     background-color: var(--dark-color);
     padding: 1rem 2rem;
@@ -50,7 +50,6 @@ body {
     font-weight: 500;
 }
 
-/* Review Main Content */
 .review-main {
     max-width: 1200px;
     margin: 2rem auto;
@@ -63,7 +62,7 @@ body {
     gap: 3rem;
 }
 
-/* Review Header */
+
 .review-header {
     background-color: var(--card-bg);
     padding: 2rem;
@@ -138,7 +137,7 @@ body {
     color: #b2bec3;
 }
 
-/* Write Review */
+
 .write-review {
     background-color: var(--card-bg);
     padding: 2rem;
@@ -203,7 +202,7 @@ body {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
-/* Reviews List */
+
 .reviews-list {
     background-color: var(--card-bg);
     padding: 2rem;
@@ -327,7 +326,7 @@ body {
     margin-top: 1rem;
 }
 
-/* Footer */
+
 .main-footer {
     background-color: var(--dark-color);
     padding: 3rem 2rem 1rem;
@@ -368,7 +367,7 @@ body {
     border-top: 1px solid var(--border-color);
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;

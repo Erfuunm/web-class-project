@@ -1,4 +1,4 @@
-/* Search Page Styles */
+
 :root {
     --primary-color: #6c5ce7;
     --secondary-color: #a29bfe;
@@ -21,7 +21,7 @@ body {
     color: var(--text-color);
 }
 
-/* Header Styles */
+
 .main-header {
     background-color: var(--dark-color);
     padding: 1rem 2rem;
@@ -52,7 +52,6 @@ body {
     font-weight: 500;
 }
 
-/* Search Container */
 .search-container {
     display: flex;
     max-width: 1400px;
@@ -61,7 +60,6 @@ body {
     gap: 2rem;
 }
 
-/* Search Filters */
 .search-filters {
     width: 300px;
     background-color: var(--card-bg);
@@ -157,7 +155,6 @@ body {
 
 
 
-/* Search Results */
 .search-results {
     flex: 1;
 }
@@ -306,7 +303,6 @@ body {
     border-top: 1px solid var(--border-color);
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
     .search-container {
         flex-direction: column;

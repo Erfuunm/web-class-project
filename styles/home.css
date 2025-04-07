@@ -1,4 +1,4 @@
-/* Global Styles */
+
 :root {
     --primary-color: #6c5ce7;
     --secondary-color: #a29bfe;
@@ -65,7 +65,7 @@ a:hover {
     background-color: #3c484d;
 }
 
-/* Header Styles */
+
 .main-header {
     background-color: var(--dark-color);
     padding: 1rem 2rem;
@@ -96,7 +96,7 @@ a:hover {
     font-weight: 500;
 }
 
-/* Hero Section */
+
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
                 url('../assets/images/hero-bg.jpg') no-repeat center center/cover;
@@ -137,7 +137,7 @@ a:hover {
     outline: 2px solid var(--primary-color);
 }
 
-/* Special Offers */
+
 .special-offers {
     padding: 4rem 2rem;
     max-width: 1400px;
@@ -197,7 +197,7 @@ a:hover {
     color: #b2bec3;
 }
 
-/* Popular Destinations */
+
 .popular-destinations {
     padding: 4rem 2rem;
     max-width: 1400px;
@@ -245,7 +245,7 @@ a:hover {
     color: var(--warning-color);
 }
 
-/* Top Reviews */
+
 .top-reviews {
     padding: 4rem 2rem;
     max-width: 1400px;

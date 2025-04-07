@@ -1,4 +1,4 @@
-/* Profile Page Styles */
+
 :root {
     --primary-color: #6c5ce7;
     --secondary-color: #a29bfe;
@@ -20,11 +20,11 @@
 }
 
 body {
-    background-color: var(--dark-color);
+    background-color: #1e272e;
     color: var(--text-color);
 }
 
-/* Header Styles */
+
 .main-header {
     background-color: var(--dark-color);
     padding: 1rem 2rem;
@@ -52,7 +52,6 @@ body {
     font-weight: 500;
 }
 
-/* Profile Main Content */
 .profile-main {
     max-width: 1200px;
     margin: 2rem auto;
@@ -65,7 +64,7 @@ body {
     gap: 3rem;
 }
 
-/* User Info Section */
+
 .user-info {
     background-color: var(--card-bg);
     padding: 2rem;
@@ -148,7 +147,7 @@ body {
     color: #b2bec3;
 }
 
-/* Reservations Section */
+
 .reservations {
     background-color: var(--card-bg);
     padding: 2rem;
@@ -274,7 +273,6 @@ body {
     font-weight: 600;
 }
 
-/* Transactions Section */
 .transactions {
     background-color: var(--card-bg);
     padding: 2rem;
@@ -361,7 +359,7 @@ body {
     color: var(--cancelled-color);
 }
 
-/* Footer */
+
 .main-footer {
     background-color: var(--dark-color);
     padding: 3rem 2rem 1rem;
@@ -402,7 +400,7 @@ body {
     border-top: 1px solid var(--border-color);
 }
 
-/* Responsive Design */
+
 @media (max-width: 1024px) {
     .reservation-card, .transaction-card {
         flex-direction: column;
